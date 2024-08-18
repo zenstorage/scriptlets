@@ -349,7 +349,6 @@ function twitchClaimBonus() {
 /// world isolated
 /// dependency safe-self.fn
 // example.com##+js(unbnsfw)
-
 function unblockNSFW(msg) {
     if (msg === '') {
         return;
