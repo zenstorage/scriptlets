@@ -344,3 +344,18 @@ function twitchClaimBonus() {
     observer.observe(document, { subtree: true, childList: true });
 }
 
+/// unblock-nsfw-reddit.js
+/// alias unbnsfwa.js
+/// world isolated
+/// dependency safe-self.fn
+// example.com##+js(unbnsfw)
+
+function unblockNSFW(msg) {
+    if (msg === '') {
+        return;
+    }
+    console.log('Before', msg);
+    const safe = safeSelf();
+
+    console.log(msg, safe);
+}
